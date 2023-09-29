@@ -97,9 +97,36 @@ header>section>div>a {
 header>section>div>a:hover {
   filter: brightness(0.9);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  transition: filter 0.33s, box-shadow 0.33s;
+}
+
+section>button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1em;
+  color: var(--background-color);
+  font-weight: 600;
+  font-size: 1.8vh;
 }
 
 header>section>button {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  height: 6.5vh;
+  cursor: pointer;
+  transition: transform 0.5s, box-shadow 0.5s, filter 0.5s;
+}
+
+header>section>button:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  filter: brightness(0.85);
+}
+
+header>section>button:active,
+header>section>div>a:active {
+  transform: scale(0.8);
 }
