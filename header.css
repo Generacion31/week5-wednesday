@@ -59,6 +59,9 @@ body>header>section>p>span {
 body>header>section>div {
   grid-column: 1/2;
   grid-row: 4/5;
+  display: flex;
+  /* clase del jueves */
+  gap: 6vh;
 }
 
 body>header>section>button {
@@ -76,4 +79,23 @@ body>header>section>figure {
 
 section>figure>img {
   width: 100%;
+}
+
+/* clase de jueves */
+
+header>section>div>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  transition: filter 0.33s, box-shadow 0.33s;
+}
+
+header>section>div>a:hover {
+  filter: brightness(0.9);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: filter 0.33s, box-shadow 0.33s;
 }
