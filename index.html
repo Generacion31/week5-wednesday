@@ -22,7 +22,7 @@
   <!-- hojas de estilos -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="header.css">
-
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -30,24 +30,24 @@
     <nav>
       <img src="./iconos/menu.svg" alt="menu">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#experiencia-habilidades">Experiencia y habilidades</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="contacto">Contacto</a></li>
+        <li class="nav__li"><a href="#home">Home</a></li>
+        <li class="nav__li"><a href="#experiencia-habilidades">Experiencia y habilidades</a></li>
+        <li class="nav__li nav__li--ul"><a href="#portafolio">Portafolio</a></li>
+        <li class="nav__li"><a href="contacto">Contacto</a></li>
       </ul>
     </nav>
 
-    <section>
+    <section class="setion">
 
-      <h1>Design experience</h1>
+      <h1 class="section__h1">Design experience</h1>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <p>+5 años <span>de experiencia</span></p>
+      <p class="section__p--red">+5 años <span>de experiencia</span></p>
 
-      <div>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="./iconos/linkedin.svg" alt="icono linkedin"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="./iconos/instagram.svg"
+      <div class="section__div--modificador div">
+        <a class="div_a" href="https://www.linkedin.com/" target="_blank"><img src="./iconos/linkedin.svg" alt="icono linkedin"></a>
+        <a class="div__a" href="https://www.instagram.com/" target="_blank"><img src="./iconos/instagram.svg"
             alt="icono instagram"></a>
         <a href="https://twitter.com/" target="_blank"><img src="./iconos/twitter.svg" alt="icono twitter"></a>
       </div>
@@ -56,13 +56,29 @@
         <a href="#contacto"><img src="./iconos/mail.svg" alt="icono de mail"> Contactame</a>
       </button>
 
-      <figure>
+
+      <figure class="section__figure">
         <img src="./images/photo desktop.png" alt="foto de perfil">
       </figure>
 
     </section>
   </header>
 
+  <main>
+
+
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ en academlo</p>
+  </footer>
+
+  <!-- 
+        BEM          
+        B:bloque contenedor, 
+        E:elemento,
+        M: modificador
+  -->
 
 
 </body>
